@@ -1,5 +1,6 @@
 :root {
   font-family: Cabin;
+  font-style:normal;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -33,33 +34,98 @@ body {
 }
 
 h1 {
-  font-weight: normal;
+  font-weight: 400;
+  font-size: 3.052rem;
+  line-height: 59px;
 }
 h2{
-  font-weight: normal;
+  font-weight: 400;
+  font-size: 2.441rem;
+  line-height:47px;
 }
 h3 {
-  font-weight: normal;
+  font-weight: 400;
+  font-size: 1.953rem;
+  line-height: 38px;
 }
 h4 {
-  font-weight: normal;
+  font-weight: 400;
+  font-size: 1.563rem;
+  line-height: 30px;
 }
 h5 {
-  font-weight: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 24px;
 }
 h6 {
-  font-weight: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
 }
 
 .titleRegularNormal{
- font-weight:normal;
+  font-weight: 400;
+  font-size: 3.815rem;
+  line-height: 74px;
 }
-.titleSmallRegularMedium{
-  font-weight: normal;
+.titleMedium{
+  font-weight: 500;
+  font-size: 3.815rem;
+  line-height: 74px;
 }
-.bold{
-  font-weight: normal;
+.titlebold{
+  font-weight: 600;
+  font-size: 3.815rem;
+  line-height: 74px;
 
+}
+.titleSmallNormal{
+  font-weight: 400;
+  font-size: 3.052rem;
+  line-height: 59px;
+}
+.titleSmallMedium{
+  font-weight: 500;
+  font-size: 3.052rem;
+  line-height: 59px;
+}
+.subtitleNormal{
+  font-weight: 400;
+  font-size: 2.441rem;
+  line-height: 47px;
+}
+.subtitlemedium{
+  font-weight: 500;
+  font-size: 2.441rem;
+  line-height: 47px;
+}
+.smallRegular{
+  font-weight: 400;
+  font-size: 1.95rem;
+  line-height: 38px;  
+}
+.smallMedium{
+  font-weight: 500;
+  font-size: 1.95rem;
+  line-height: 38px;
+}
+.bodyNormal{
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+.bodyNormal{
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 24px;
+}
+.bodySmall{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
+  letter-spacing: -0.02em;
 }
 
 button {
