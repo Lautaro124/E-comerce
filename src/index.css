@@ -1,6 +1,6 @@
 :root {
   font-family: Cabin;
-  font-style:normal;
+  font-style: normal;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -21,6 +21,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -38,90 +39,106 @@ h1 {
   font-size: 3.052rem;
   line-height: 59px;
 }
-h2{
+
+h2 {
   font-weight: 400;
   font-size: 2.441rem;
-  line-height:47px;
+  line-height: 47px;
 }
+
 h3 {
   font-weight: 400;
   font-size: 1.953rem;
   line-height: 38px;
 }
+
 h4 {
   font-weight: 400;
   font-size: 1.563rem;
   line-height: 30px;
 }
+
 h5 {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 24px;
 }
+
 h6 {
   font-weight: 400;
   font-size: 1rem;
   line-height: 19px;
 }
 
-.titleRegularNormal{
+.titleRegularNormal {
   font-weight: 400;
   font-size: 3.815rem;
   line-height: 74px;
 }
-.titleMedium{
+
+.titleMedium {
   font-weight: 500;
   font-size: 3.815rem;
   line-height: 74px;
 }
-.titlebold{
+
+.titlebold {
   font-weight: 600;
   font-size: 3.815rem;
   line-height: 74px;
 
 }
-.titleSmallNormal{
+
+.titleSmallNormal {
   font-weight: 400;
   font-size: 3.052rem;
   line-height: 59px;
 }
-.titleSmallMedium{
+
+.titleSmallMedium {
   font-weight: 500;
   font-size: 3.052rem;
   line-height: 59px;
 }
-.subtitleNormal{
+
+.subtitleNormal {
   font-weight: 400;
   font-size: 2.441rem;
   line-height: 47px;
 }
-.subtitlemedium{
+
+.subtitlemedium {
   font-weight: 500;
   font-size: 2.441rem;
   line-height: 47px;
 }
-.smallRegular{
+
+.smallRegular {
   font-weight: 400;
   font-size: 1.95rem;
-  line-height: 38px;  
+  line-height: 38px;
 }
-.smallMedium{
+
+.smallMedium {
   font-weight: 500;
   font-size: 1.95rem;
   line-height: 38px;
 }
-.bodyNormal{
+
+.bodyNormal {
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 24px;
+  line-height: 24.3px;
   letter-spacing: -0.02em;
 }
-.bodyNormal{
+
+.bodyNormalMedium {
   font-weight: 500;
   font-size: 1.25rem;
-  line-height: 24px;
+  line-height: 24.3px;
 }
-.bodySmall{
+
+.bodySmall {
   font-weight: 400;
   font-size: 1rem;
   line-height: 19px;
@@ -139,9 +156,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -152,9 +171,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }

@@ -1,0 +1,29 @@
+.container{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.second{
+  margin-left: 5px;
+}
+.third{
+  margin-top:-13px;
+  opacity: .8;
+}
+.bottonCompra{
+  margin-top: 15px;
+  height: 40px;
+  left: 140;
+  border-radius: 9px;
+  padding: 8px;
+
+}
+.buyData{
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+}
+.four{
+  margin-left:13px;
+}
