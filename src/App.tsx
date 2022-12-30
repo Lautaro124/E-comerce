@@ -1,14 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 import {Card} from './components/card/Index'
+import data from './assets/data.json'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-        <Card/>
+        {
+          data.map( 
+            item => <Card 
+              title={item.title} 
+              description={item.description}
+              image={item.image} 
+              price={item.price}
+              />
+          )
+        }
     </div>
   )
 }

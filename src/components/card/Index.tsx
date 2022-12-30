@@ -1,16 +1,23 @@
 import React from 'react'
 import './style.css'
 
-export const Card = () => {
+interface Props {
+    title: string
+    description: string
+    image: string
+    price: number
+}
+
+export const Card = ({title,description,image,price}: Props) => {
     return (
         <button className='container'>
             <img 
-                src={"https://cdn.discordapp.com/attachments/1010267684119793674/1057398733521821817/Main-Image.png"} 
+                src={image} 
                 alt="Apple Watch" />
-            <p className='bodyNormalMedium second'>Apple Watch</p>
-            <p className='bodySmall third second'>Series 5 SE</p>
+            <p className='bodyNormalMedium second'>{ title }</p>
+            <p className='bodySmall third second'>{description}</p>
             <div className='buyData'>
-                <p className='bodyNormalMedium four'>$529.99</p>
+                <p className='bodyNormalMedium four'>${price}</p>
                 <button className='bottonCompra'>
                     <img 
                         src={"https://cdn.discordapp.com/attachments/1010267684119793674/1057398320814887004/Icon.png"} 
@@ -19,6 +26,6 @@ export const Card = () => {
             </div>
         </button>
     )
-
+        
 }
 
