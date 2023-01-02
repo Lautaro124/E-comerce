@@ -1,14 +1,16 @@
 import { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import './App.css'
 import { getAllData } from './redux/modules/items/items'
 import service from './service/service'
 import { Card } from './components/card/Index'
 import data from './assets/data.json'
+import { RootState } from './redux/store'
 
 
-function App() {
-
+export default function App() {
+  const items=useSelector((state: RootState) => state.item)
+  
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -19,7 +21,8 @@ function App() {
           title: item.title,
           price: item.price,
           description: item.description,
-          category: item.category
+          category: item.category,
+          image: item.image
         }
       })
 
@@ -28,9 +31,9 @@ function App() {
   }, []
   )
   return (
-    <div className="App">
+    <div className="cards">
       {
-        data.map(
+        items.items.map(
           item => <Card
             key={item.id}
             title={item.title}
