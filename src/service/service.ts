@@ -1,11 +1,10 @@
 import axios from 'axios'
-import { API_URL } from './utils'
+import { API_URL, Product } from './utils'
 
-const service =async <P> () => {
+const service = async (): Promise<Product[]> => {
   try {
-    const response: P = (await axios.get(API_URL)).data
-
-    return response
+    const response = await axios.get(API_URL)
+    return response.data
   }
   catch (error) {
     throw error
