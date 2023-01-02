@@ -10,12 +10,14 @@ interface Props {
 
 export const Card = ({title,description,image,price}: Props) => {
     return (
-        <button className='container'>
-            <img 
+        <button className='container '>
+            <img className='cover'
                 src={image} 
-                alt="Apple Watch" />
+            />
             <p className='bodyNormalMedium second'>{ title }</p>
-            <p className='bodySmall third second'>{description}</p>
+            
+            <p className=' bodySmall second third'>{description}</p>
+            
             <div className='buyData'>
                 <p className='bodyNormalMedium four'>${price}</p>
                 <button className='bottonCompra'>
