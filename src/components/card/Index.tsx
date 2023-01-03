@@ -1,12 +1,15 @@
 import React from 'react'
 import './style.css'
 
+
 interface Props {
     title: string
     description: string
     image: string
     price: number
 }
+
+
 
 export const Card = ({title,description,image,price}: Props) => {
     return (
