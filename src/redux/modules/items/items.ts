@@ -8,6 +8,7 @@ const itemSlicer = createSlice({
   initialState,
   reducers: {
     getAllData: (state, action: PayloadAction<Item[]>) => {  
+      if(state.items.length != 0) return state;
       action.payload.map(item => {
         state.items.push(item)
       })
@@ -15,11 +16,14 @@ const itemSlicer = createSlice({
     getDetails: (state, action: PayloadAction<number>) => {
       state.itemSelected = action.payload
     },
-    getItems: (state) =>{
-      
-    }
+    findItems: (state,action: PayloadAction<string>) =>{
+      return state= {
+            ...state,
+            items:state.items.filter((item)=> item.title.includes(action.payload))
+          }
+       }
   }
 })
 
-export const { getDetails, getItems, getAllData } = itemSlicer.actions
+export const { getDetails, findItems, getAllData } = itemSlicer.actions
 export default itemSlicer.reducer

@@ -4,6 +4,7 @@ export interface Item {
   price: number;
   category: string;
   description: string;
+  image: string; 
 }
 
 export interface ItemState {

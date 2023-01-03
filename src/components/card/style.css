@@ -1,0 +1,43 @@
+.container{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 223.36px ;
+  max-height:397px ;
+  overflow:hidden ;
+  text-overflow: inherit;
+  white-space: nowrap;
+  align-items: center;
+}
+.cover{
+  object-fit: cover;
+  max-width: 500px  ;
+  height: 232px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.second{
+  margin-left: 5px;
+}
+.third{
+  margin-top:-13px;
+  opacity: .8;
+}
+.bottonCompra{
+  margin-top: 15px;
+  height: 40px;
+  left: 140;
+  border-radius: 9px;
+  padding: 8px;
+
+}
+.buyData{
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+}
+.four{
+  margin-left:13px;
+}
