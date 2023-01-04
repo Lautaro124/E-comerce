@@ -14,5 +14,6 @@ export default function App() {
   return (
     <div className="cards">
       <Home />
-    </div>)
+    </div>
+  )
 }
