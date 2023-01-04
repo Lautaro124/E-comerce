@@ -3,7 +3,7 @@ import { API_URL, Product } from './utils'
 
 const service = async (): Promise<Product[]> => {
   try {
-    const response = await axios.get(API_URL)
+    const response = await axios.get( API_URL )
     return response.data
   }
   catch (error) {

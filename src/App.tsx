@@ -1,30 +1,18 @@
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import './App.css'
-import { findItems, getAllData } from './redux/modules/items/items'
-import service from './service/service'
+import { findItems } from './redux/modules/items/items'
 import { Card } from './components/card/Index'
 import { RootState } from './redux/store'
+import { getItems } from './redux/modules/items/actions'
 
 export default function App() {
   const items=useSelector((state: RootState) => state.item)
   const [itemName,setItemName]=useState("");
   const dispatch = useDispatch()
+  
   useEffect(()=>{
-    if(items.items.length != 0) return
-    service().then(info => {
-        const ite = info.map(item => {
-          return {
-            id: item.id,
-            title: item.title,
-            price: item.price,
-            description: item.description,
-            category: item.category,
-            image: item.image
-          }
-        })
-        dispatch(getAllData(ite))
-    })
+    getItems(dispatch)
   },[]) 
   const handleSumbit=()=>{
     dispatch(findItems(itemName));
@@ -41,10 +29,7 @@ export default function App() {
           item => 
           <div key={item.id}>
             <Card
-            title={item.title}
-            description={item.description}
-            image={item.image}
-            price={item.price}
+            {...item}
           />
           </div>
         )
