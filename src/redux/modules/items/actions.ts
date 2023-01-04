@@ -7,7 +7,7 @@ import { getAllData } from "./items"
 const action = {
   async getItems(dispatch: Dispatch<AnyAction>){
     try {
-      const response = (await service())
+      const response = await service()
       const items: Item[] = response.map(
         item => ({
             id: item.id,

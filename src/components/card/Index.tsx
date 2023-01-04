@@ -1,4 +1,3 @@
-import React from 'react'
 import './style.css'
 
 interface Props {
@@ -8,7 +7,7 @@ interface Props {
     price: number
 }
 
-export const Card = ({title,description,image,price}: Props) => {
+export const Card = ({ title,description,image,price }: Props) => {
     return (
         <div className='container' onClick={() => console.log(title)}>
             <div className='imageContainer'>
@@ -33,6 +32,5 @@ export const Card = ({title,description,image,price}: Props) => {
             </div>
         </div>
     )
-        
 }
 

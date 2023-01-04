@@ -9,16 +9,16 @@ function Home() {
   const [ itemName,setItemName ] = useState('')
   const dispatch = useDispatch()
 
-  const handleSumbit=(e: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
-    e.preventDefault()
+  const handleSumbit=(event: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
+    event.preventDefault()
     dispatch( findItems(itemName) )
   }
 
   return (
     <div>
       <div>
-        <input onChange={ (e) => setItemName(e.target.value) }/>
-        <button onClick={ (e) => handleSumbit(e) }>Search</button>
+        <input onChange={ (event) => setItemName(event.target.value) }/>
+        <button onClick={ (event) => handleSumbit(event) }>Search</button>
       </div>
       <div className='cards'>
         {

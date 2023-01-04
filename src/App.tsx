@@ -6,9 +6,10 @@ import Home from './components/home/Index'
 
 export default function App() {
   const dispatch = useDispatch()
-  useEffect(()=>{
+
+  useEffect(() => {
     getItems(dispatch)
-  },[]) 
+  },[])
 
   return (
     <div className="cards">
