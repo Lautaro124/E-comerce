@@ -8,10 +8,10 @@ const itemSlicer = createSlice({
   initialState,
   reducers: {
     getAllData: (state, action: PayloadAction<Item[]>) => {  
-      if(state.items.length != 0) return state;
-      action.payload.map(item => {
-        state.items.push(item)
-      })
+      return state = {
+        ...state,
+        items: action.payload,
+      }
     },
     getDetails: (state, action: PayloadAction<number>) => {
       state.itemSelected = action.payload
