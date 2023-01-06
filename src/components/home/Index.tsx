@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { findItems } from '../../redux/modules/items/items';
 import { RootState } from '../../redux/store';
 import { Card } from '../card/Index';
+import { LeftBar } from '../leftBar';
 
 function Home() {
   const items = useSelector( ( state: RootState ) => state.item.items )
@@ -16,6 +17,9 @@ function Home() {
 
   return (
     <div>
+      <div>
+      <LeftBar/>
+      </div>
       <div>
         <input onChange={ (event) => setItemName(event.target.value) }/>
         <button onClick={ (event) => handleSumbit(event) }>Search</button>
