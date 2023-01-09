@@ -18,9 +18,6 @@ function Home() {
   return (
     <div>
       <div>
-      <LeftBar/>
-      </div>
-      <div>
         <input onChange={ (event) => setItemName(event.target.value) }/>
         <button onClick={ (event) => handleSumbit(event) }>Search</button>
       </div>

@@ -3,20 +3,47 @@
   background-color: white;
   flex-wrap: nowrap;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
+  align-items: normal;
   width: 72px ;
-  height: 992px;
+  height: 905px;
   border-radius: 9px;
+  position: sticky;
+  top: 0;
+  
+
 }
+
 .button{
-  background-color:black ;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 .buttone{
   background-color: red;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 17px;
 }
 .Buton{
- display: flex;
- flex-direction: column;
+  padding: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+  height: 200px;
  
+}
+.housebutton{
+  background-color: black;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.img{
+  margin-top:10px;
 }
