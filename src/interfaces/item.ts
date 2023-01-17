@@ -5,14 +5,10 @@ export interface Item {
   category: string;
   description: string;
   image: string; 
-  
 }
 
 export interface ItemState {
   itemSelected: number | null;
   items: Item[];
-  carrito: Carrito[]
-}
-export interface Carrito {
-  items: Item[];
+  
 }
