@@ -3,6 +3,7 @@ import type { PayloadAction } from '@reduxjs/toolkit'
 import { initialState } from './utils'
 import { Item } from '../../../interfaces/item'
 
+
 const itemSlicer = createSlice({
   name: 'item',
   initialState,
@@ -22,8 +23,22 @@ const itemSlicer = createSlice({
             items:state.items.filter((item)=> item.title.includes(action.payload))
           }
        }
+      agregarItem: (state, action: PayloadAction<Item>) => {
+
+        state.carrito.push(action.payload)
+      },
+      eliminarItem: (state, action: PayloadAction<number>) => {
+        
+        state.carrito.splice(action.payload, 1);
+      }
+  
   }
 })
 
-export const { getDetails, findItems, getAllData } = itemSlicer.actions
+export const { getDetails, findItems, getAllData, agregarItem, eliminarItem } = itemSlicer.actions
 export default itemSlicer.reducer
+
+
+
+    
+   
