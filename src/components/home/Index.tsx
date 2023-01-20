@@ -19,7 +19,7 @@ function Home() {
   return (
     <div>
       <div>
-        <input className='browser' onChange={ (event) => setItemName(event.target.value) }/>
+        <input placeholder="Enter product to search" className='browser' onChange={ (event) => setItemName(event.target.value) }/>
         <button onClick={ (event) => handleSumbit(event) }>Search</button>
       </div>
       <div className='cards'>
