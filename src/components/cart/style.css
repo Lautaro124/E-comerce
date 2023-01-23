@@ -14,8 +14,7 @@
     3,
     1fr
   );
-  grid-template-rows: minmax(50px, 60px);
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .cardImages{
