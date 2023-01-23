@@ -1,15 +1,24 @@
+import { useEffect } from 'react'
+import { useSelector } from 'react-redux'
+import { RootState } from '../../redux/store'
 import './style.css'
 
 const Cart = () => {
+  const cartsItems = useSelector((state: RootState) => state.item.cart)
+  
   return (
     <div className='cartBody'>
       <h2 className='titleCard'>Bag</h2>
       <div className='CartImages'>
-        <img
-          className='cardImages'
-          src='https://cdn.discordapp.com/attachments/1010267684119793674/1057398733521821817/Main-Image.png'
-          alt='No hay imagen'
-        />
+        {
+          cartsItems.map( item => (
+            <img
+              className='cardImages'
+              src={ item.image }
+              alt='No hay imagen'
+            />
+          ))
+        }
       </div>
       <button>
         <h5>View Bag</h5>

@@ -10,5 +10,5 @@ export interface Item {
 export interface ItemState {
   itemSelected: number | null;
   items: Item[];
-  
+  cart: Item[]
 }
