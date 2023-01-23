@@ -1,0 +1,22 @@
+.cartBody{
+  grid-column: 3;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.titleCard{
+  margin-bottom: 10px;
+}
+
+.CartImages{
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  );
+  gap: 1rem;
+}
+
+.cardImages{
+  width: 100%;
+}

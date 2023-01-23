@@ -1,17 +1,16 @@
 .background{
+  grid-column: 1;
   display: flex;
   background-color: white;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: space-between;
   align-items: normal;
-  width: 72px ;
-  height: 905px;
   border-radius: 9px;
   position: sticky;
   top: 0;
-  
-
+  height: 95%;
+  margin-top: 1.2rem;
 }
 
 .button{

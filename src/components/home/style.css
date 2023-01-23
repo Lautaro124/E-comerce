@@ -6,3 +6,10 @@
   height: 30px;
   margin-bottom: 20px;
 }
+
+.bodyHome{
+  margin-top: 2rem;
+  overflow: scroll;
+  grid-column: 2;
+  grid-row: 1;
+}

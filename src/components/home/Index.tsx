@@ -17,7 +17,7 @@ function Home() {
   }
 
   return (
-    <div>
+    <div className='bodyHome'>
       <div>
         <input placeholder="Enter product to search" className='browser' onChange={ (event) => setItemName(event.target.value) }/>
         <button onClick={ (event) => handleSumbit(event) }>Search</button>
