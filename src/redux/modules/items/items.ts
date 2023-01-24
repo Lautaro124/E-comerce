@@ -22,23 +22,12 @@ const itemSlicer = createSlice({
             ...state,
             items:state.items.filter((item)=> item.title.includes(action.payload))
           }
-       }
-      agregarItem: (state, action: PayloadAction<Item>) => {
-
-        state.carrito.push(action.payload)
-      },
-      eliminarItem: (state, action: PayloadAction<number>) => {
-        
-        state.carrito.splice(action.payload, 1);
-      }
-  
+       },
+    addCart: (state, action: PayloadAction<Item>) => {
+      state.cart.push(action.payload)
+    }
   }
 })
 
-export const { getDetails, findItems, getAllData, agregarItem, eliminarItem } = itemSlicer.actions
+export const { getDetails, findItems, getAllData, addCart } = itemSlicer.actions
 export default itemSlicer.reducer
-
-
-
-    
-   

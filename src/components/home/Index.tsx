@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { findItems } from '../../redux/modules/items/items';
 import { RootState } from '../../redux/store';
 import { Card } from '../card/Index';
+import './style.css';
 
 
 function Home() {
@@ -16,9 +17,9 @@ function Home() {
   }
 
   return (
-    <div>
+    <div className='bodyHome'>
       <div>
-        <input onChange={ (event) => setItemName(event.target.value) }/>
+        <input placeholder="Enter product to search" className='browser' onChange={ (event) => setItemName(event.target.value) }/>
         <button onClick={ (event) => handleSumbit(event) }>Search</button>
       </div>
       <div className='cards'>

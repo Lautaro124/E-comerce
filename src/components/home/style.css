@@ -1,0 +1,15 @@
+.browser{
+  background-color:white;
+  border-radius: 8px;
+  color:black;
+  width: 25%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.bodyHome{
+  margin-top: 2rem;
+  overflow: scroll;
+  grid-column: 2;
+  grid-row: 1;
+}
