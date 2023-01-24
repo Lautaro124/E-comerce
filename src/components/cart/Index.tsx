@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../redux/store'
 import './style.css'
+import{Link} from 'react-router-dom'
 
 const Cart = () => {
   const cartsItems = useSelector((state: RootState) => state.item.cart)
@@ -21,9 +22,9 @@ const Cart = () => {
           ))
         }
       </div>
-      <button>
+      <Link to='/bag'>
         <h5>View Bag</h5>
-      </button>
+      </Link>
     </div>
   )
 }
