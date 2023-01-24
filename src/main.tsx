@@ -4,6 +4,12 @@ import { Provider } from 'react-redux'
 import { store } from './redux/store'
 import App from './App'
 import './index.css'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
