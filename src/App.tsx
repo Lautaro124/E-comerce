@@ -6,16 +6,34 @@ import Home from './components/home/Index'
 import Layout from './components/layout/Index'
 import CheckBag from './components/checkBag/Index'
 
+import { LeftBar } from './components/leftBar'
+import Cart from './components/cart/Index'
+import { Route, Routes } from 'react-router-dom'
 export default function App() {
   const dispatch = useDispatch()
 
   useEffect(() => {
     getItems(dispatch)
-  },[])
+  }, [])
 
   return (
-    <Layout>
-      <Home />
-    </Layout>
+
+    <div className="body">
+      <Routes>
+
+        <Route path='/' element={
+          <Layout>
+            <Home />
+          </Layout>
+        } />
+        <Route path='/bag'element={
+          <Layout>
+            <CheckBag />
+          </Layout>
+        }/>
+
+      </Routes>
+    </div>
+
   )
 }
