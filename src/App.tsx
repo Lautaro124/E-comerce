@@ -3,8 +3,8 @@ import { useDispatch } from 'react-redux'
 import './App.css'
 import { getItems } from './redux/modules/items/actions'
 import Home from './components/home/Index'
-import { LeftBar } from './components/leftBar'
-import Cart from './components/cart/Index'
+import Layout from './components/layout/Index'
+import CheckBag from './components/checkBag/Index'
 
 export default function App() {
   const dispatch = useDispatch()
@@ -14,10 +14,8 @@ export default function App() {
   },[])
 
   return (
-    <div className="body">
-      <LeftBar />
+    <Layout>
       <Home />
-      <Cart />
-    </div>
+    </Layout>
   )
 }
