@@ -5,9 +5,7 @@ import { getItems } from './redux/modules/items/actions'
 import Home from './components/home/Index'
 import Layout from './components/layout/Index'
 import CheckBag from './components/checkBag/Index'
-
-import { LeftBar } from './components/leftBar'
-import Cart from './components/cart/Index'
+import InterView from './components/interView/index'
 import { Route, Routes } from 'react-router-dom'
 export default function App() {
   const dispatch = useDispatch()
@@ -31,7 +29,12 @@ export default function App() {
             <CheckBag />
           </Layout>
         }/>
-
+        <Route path='/interView'element={
+          <Layout>
+            <InterView />
+          </Layout>         
+        }
+        />
       </Routes>
     </div>
 
