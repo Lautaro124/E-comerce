@@ -5,4 +5,10 @@
   justify-content: flex-start;
   align-content: space-around;
   align-items: center;
+  padding-bottom: 2rem;
+}
+
+.titleBag {
+  margin: 0px;
+  margin-bottom: 1rem;
 }
