@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom'
 import './style.css'
+
 
 export const LeftBar = () => {
 
@@ -19,12 +21,14 @@ return (
                   "https://cdn.discordapp.com/attachments/925160720574857227/1062102409037496320/Icon.png"/>
             </button>
           </div>
-          <div>     
-          <button className='housebutton' >
-            <img 
-              src=
-                "https://cdn.discordapp.com/attachments/925160720574857227/1062104879633551502/Icon.png"/>
-          </button>
+          <div> 
+            <Link to='/' >    
+              <button className='housebutton'>
+                <img 
+                  src=
+                    "https://cdn.discordapp.com/attachments/925160720574857227/1062104879633551502/Icon.png"/>
+              </button>
+          </Link>
           </div>
           <div>
           <button className='button'>

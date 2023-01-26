@@ -23,7 +23,7 @@ const Cart = () => {
         }
       </div>
       <Link to='/bag'>
-        <h5>View Bag</h5>
+        <button>View Bag</button>
       </Link>
     </div>
   )
