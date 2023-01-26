@@ -8,7 +8,7 @@ const CheckBag = () => {
 
   return (
     <div className='bodyHome bagHome'>
-      <h2>Check your Bag Items</h2>
+      <h2 className='titleBag'>Check your Bag Items</h2>
       <div className='bagHome'>
         {
           cart.map( 
