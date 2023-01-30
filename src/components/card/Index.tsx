@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux'
 import { Item } from '../../interfaces/item'
-import { addCart } from '../../redux/modules/items/items'
+import { addCart, getDetails } from '../../redux/modules/items/items'
 import './style.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -16,9 +16,9 @@ export const Card = (item: Item) => {
     
         let history = useNavigate();
       
-        function handleClick() {
-            
-          history('/interView');
+        function handleClick() { 
+            dispatch(getDetails(item))
+            history('/interView');
         }
         const Compra=()=>{
             return(

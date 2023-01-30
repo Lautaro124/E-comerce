@@ -14,7 +14,7 @@ const itemSlicer = createSlice({
         items: action.payload,
       }
     },
-    getDetails: (state, action: PayloadAction<number>) => {
+    getDetails: (state, action: PayloadAction<Item>) => {
       state.itemSelected = action.payload
     },
     findItems: (state,action: PayloadAction<string>) =>{
