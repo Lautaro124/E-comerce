@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   server:{
     open: true,
-    base: '/store/'
+    base: '/show_store/'
   }
 })
