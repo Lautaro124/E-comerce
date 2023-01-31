@@ -6,12 +6,7 @@ import{Link} from 'react-router-dom'
 import { Item } from '../../interfaces/item'
 import { addCart,} from '../../redux/modules/items/items'
 
-const Cart = (item:Item) => {
-  const dispatch = useDispatch()
-    const addCard = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        event.stopPropagation();
-        dispatch(addCart(item))
-    }
+const Cart = () => {
   const cartsItems = useSelector((state: RootState) => state.item.cart)
   
   return (
@@ -30,7 +25,10 @@ const Cart = (item:Item) => {
         }
       </div>
       <Link to='/bag'>
-        <button>View Bag</button>
+        <button className='view'>
+          <img src={"https://cdn.discordapp.com/attachments/1010267684119793674/1057398320814887004/Icon.png"}/>
+          {' '}View Bag
+        </button>
       </Link>
     </div>
   )

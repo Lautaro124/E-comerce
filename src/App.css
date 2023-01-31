@@ -13,7 +13,7 @@
   width: 99vw;
   max-height: 100%;
   display: grid;
-  grid-template-columns: 4% auto 15%;
+  grid-template-columns: 4% auto 20%;
   grid-template-rows: 100vh;
   overflow: hidden;
 }
@@ -33,6 +33,7 @@
   align-items: center;
   align-content: space-around;
 }
+
 .read-the-docs {
   color: #888;
 }
