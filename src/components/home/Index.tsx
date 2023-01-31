@@ -11,17 +11,15 @@ function Home() {
   const [ itemName,setItemName ] = useState('')
   const dispatch = useDispatch()
 
-  const handleSumbit=(event: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
-    event.preventDefault()
+  const handleSumbit=() => {
     dispatch( findItems(itemName) )
   }
 
   return (
     <div className='bodyHome'>
-      <div>
+      <form onSubmit={() => handleSumbit()}>
         <input placeholder="Enter product to search" className='browser' onChange={ (event) => setItemName(event.target.value) }/>
-        <button onClick={ (event) => handleSumbit(event) }>Search</button>
-      </div>
+      </form>
       <div className='cards'>
         {
           items.map(

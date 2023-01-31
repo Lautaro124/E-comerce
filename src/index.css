@@ -6,8 +6,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #EDEDED;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -68,80 +68,6 @@ h6 {
   line-height: 19px;
 }
 
-.titleRegularNormal {
-  font-weight: 400;
-  font-size: 3.815rem;
-  line-height: 74px;
-}
-
-.titleMedium {
-  font-weight: 500;
-  font-size: 3.815rem;
-  line-height: 74px;
-}
-
-.titlebold {
-  font-weight: 600;
-  font-size: 3.815rem;
-  line-height: 74px;
-
-}
-
-.titleSmallNormal {
-  font-weight: 400;
-  font-size: 3.052rem;
-  line-height: 59px;
-}
-
-.titleSmallMedium {
-  font-weight: 500;
-  font-size: 3.052rem;
-  line-height: 59px;
-}
-
-.subtitleNormal {
-  font-weight: 400;
-  font-size: 2.441rem;
-  line-height: 47px;
-}
-
-.subtitlemedium {
-  font-weight: 500;
-  font-size: 2.441rem;
-  line-height: 47px;
-}
-
-.smallRegular {
-  font-weight: 400;
-  font-size: 1.95rem;
-  line-height: 38px;
-}
-
-.smallMedium {
-  font-weight: 500;
-  font-size: 1.95rem;
-  line-height: 38px;
-}
-
-.bodyNormal {
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 24.3px;
-  letter-spacing: -0.02em;
-}
-
-.bodyNormalMedium {
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 24.3px;
-}
-
-.bodySmall {
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 19px;
-  letter-spacing: -0.02em;
-}
 
 button {
   border-radius: 8px;
@@ -150,9 +76,10 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: transparent;
+  background-color: #1A1F16;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: black;
 }
 
 button:hover {

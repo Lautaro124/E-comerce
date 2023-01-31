@@ -8,7 +8,7 @@ export interface Item {
 }
 
 export interface ItemState {
-  itemSelected: number | null;
+  itemSelected: Item | null;
   items: Item[];
   cart: Item[]
 }
