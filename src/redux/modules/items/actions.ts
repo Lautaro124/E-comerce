@@ -1,7 +1,7 @@
 import { AnyAction, Dispatch } from "@reduxjs/toolkit"
 import { Item } from "../../../interfaces/item"
 import service from "../../../service/service"
-import { getAllData } from "./items"
+import { addCart, getAllData } from "./items"
 import { useDispatch } from 'react-redux'
 
 
@@ -25,9 +25,7 @@ const action = {
     catch(e){
       throw e
     }
-  }
-  
-  
+  },
 }
 
 export const { getItems } = action

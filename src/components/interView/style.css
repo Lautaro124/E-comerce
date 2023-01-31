@@ -1,0 +1,47 @@
+.containe{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  margin-left: 7%;
+  margin-top: 2%;
+  grid-template-columns:20% 80% ;
+  grid-template-rows:2rem 22rem 22rem ;
+}
+.back{
+  display: flex;
+  color: #fdfdfd;
+}
+.backk{
+  display: flex;
+  margin-left: 1%;
+}
+.color{
+background: #ce6a6a;
+border-radius: 13px;
+}
+.price{
+  grid-column: 2;
+  grid-row: 2;
+}
+.description{
+  grid-row: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.imagee{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  grid-column: 1;
+  grid-row: 2;
+}
+.flexi{
+  display: flex;
+  justify-content: center;
+}
+.txt{
+  padding-right: 750px;
+}
+.move{
+  margin-left: 65%;
+}
