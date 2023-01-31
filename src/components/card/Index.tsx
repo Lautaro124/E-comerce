@@ -3,58 +3,36 @@ import { Item } from '../../interfaces/item'
 import { addCart, getDetails } from '../../redux/modules/items/items'
 import './style.css'
 import { useNavigate } from 'react-router-dom';
-
-
+import Compra from '../compra/Compra';
 
 export const Card = (item: Item) => {
-    
     const dispatch = useDispatch()
-    const addCard = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        event.stopPropagation();
-        dispatch(addCart(item))
+    let history = useNavigate();
+
+    function handleClick() {
+        dispatch(getDetails(item))
+        history('/interView');
     }
-    
-        let history = useNavigate();
-      
-        function handleClick() { 
-            dispatch(getDetails(item))
-            history('/interView');
-        }
-        const Compra=()=>{
-            return(
-                <button className='bottonCompra' onClick={addCard}>
-                                <img 
-                                    src={"https://cdn.discordapp.com/attachments/1010267684119793674/1057398320814887004/Icon.png"} 
-                                    alt="My Image" />
-                            </button>
-            )
-        }
- 
+
     return (
-        
         <button className='container' onClick={handleClick}>
             <div className='imageContainer'>
-                <img 
+                <img
                     className='cover'
-                    src={item.image} 
+                    src={item.image}
                 />
             </div>
             <div className='titlesContainer'>
-                <p className='bodyNormalMedium second'>{ item.title }</p>
+                <p className='bodyNormalMedium second'>{item.title}</p>
                 <p className=' bodySmall second third'>{item.description}</p>
             </div>
             <div className='buyDataContainer'>
                 <div className='buyData'>
                     <p className='bodyNormalMedium'>${item.price}</p>
-                    <Compra/>
+                    <Compra {...item}/>
                 </div>
             </div>
         </button>
 
     )
-
-  
 }
-
-
-

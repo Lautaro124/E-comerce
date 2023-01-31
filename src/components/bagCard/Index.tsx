@@ -15,7 +15,7 @@ const BagCard: FC<Item> = (item) => {
           <span className='categoriCard'>{item.category}</span>
         </div>
         <h6 className='decriptionCard'>{item.description}</h6>
-        <span>{item.price}</span>
+        <span>$ {item.price}</span>
       </div>
     </div>
   )

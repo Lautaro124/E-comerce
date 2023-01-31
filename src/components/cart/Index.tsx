@@ -1,10 +1,17 @@
 import { useEffect } from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector,useDispatch} from 'react-redux'
 import { RootState } from '../../redux/store'
 import './style.css'
 import{Link} from 'react-router-dom'
+import { Item } from '../../interfaces/item'
+import { addCart,} from '../../redux/modules/items/items'
 
-const Cart = () => {
+const Cart = (item:Item) => {
+  const dispatch = useDispatch()
+    const addCard = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+        event.stopPropagation();
+        dispatch(addCart(item))
+    }
   const cartsItems = useSelector((state: RootState) => state.item.cart)
   
   return (
