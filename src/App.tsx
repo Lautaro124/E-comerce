@@ -5,7 +5,7 @@ import { getItems } from './redux/modules/items/actions'
 import Home from './components/home/Index'
 import Layout from './components/layout/Index'
 import CheckBag from './components/checkBag/Index'
-import Cart from './components/cart/Index'
+
 import { Route, Routes } from 'react-router-dom'
 import InterView from './components/interView'
 export default function App() {
